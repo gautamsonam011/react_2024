@@ -39,7 +39,8 @@ export default function Navbar(props) {
                             <button className="btn btn-info" type="submit">Search</button>
                         </form>
                         <div className="form-check form-switch">
-                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
+                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            
                         </div>
                     </div>
                 </div>

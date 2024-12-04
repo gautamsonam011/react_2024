@@ -19,11 +19,11 @@ function App() {
   const toggleMode = () =>{
     if (mode === 'light'){
       setMode('dark');
-      document.body.style.backgroundColor = '#818114';
+      document.body.Style.backgroundColor = 'black';
     }
     else{
       setMode('light');
-      document.body.style.backgroundColor = 'white';
+      document.body.Style.backgroundColor = 'white';
     }
   }
   return (

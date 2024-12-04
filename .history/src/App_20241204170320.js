@@ -3,7 +3,7 @@ import './App.css';
 import Abouts from './components/Abouts';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import React, {useState} from 'react'
+
 
 // let name = "Sonam Gautam"
 
@@ -14,21 +14,11 @@ import React, {useState} from 'react'
 
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setDarkMode] = useState(false);
 
-  const toggleMode = () =>{
-    if (mode === 'light'){
-      setMode('dark');
-      document.body.style.backgroundColor = '#818114';
-    }
-    else{
-      setMode('light');
-      document.body.style.backgroundColor = 'white';
-    }
-  }
   return (
     <>
-      <Navbar title = "Home" mode={mode} toggleMode={toggleMode} />
+      <Navbar title = "Home" mode={mode} />
       <div className='container my-3'>
       <TextForm heading="Enter the text below" />
       </div>

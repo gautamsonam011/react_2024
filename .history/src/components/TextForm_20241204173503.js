@@ -55,7 +55,7 @@ export default function TextForm(props) {
 
     return (
         <>
-        <div className='container' style = {{color: props.mode === 'dark'?'yellow':'grey'}}>
+        <div className='container' style = {{color: props.mode === 'dark'?'yellow':'white'}}>
             <h2>{props.heading} - {text}</h2>
             <div className="mb-3">
                 {/* <label for="exampleInputEmail1" className="form-label">Text Box</label> */}
@@ -71,7 +71,7 @@ export default function TextForm(props) {
             <p>Words: {text.split(" ").length}, Characters: {text.length}</p>
             <p>{0.008 * text.split("").length} Minutes read</p>
             <h2>Preview</h2>
-            <p>{text.length>0?text:"Enter something to preview it here"}</p>
+            <p>{text}</p>
         </div>
         </>
     )

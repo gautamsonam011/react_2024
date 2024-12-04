@@ -20,10 +20,7 @@ function App() {
       <div className='container my-3'>
       <TextForm heading="Enter the text below" />
       </div>
-      <div className="container">
       <Abouts/>
-      </div>
-      
     </>
   );
 }

@@ -23,10 +23,6 @@ function App() {
       msg:message,
       type:type
     })
-
-    setTimeout(() =>{
-      setAlert(null);
-    }, 1500);
   }
   const toggleMode = () =>{
     if (mode === 'light'){
@@ -40,8 +36,6 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   }
-
-
   return (
     <>
       <Navbar title = "Home" mode={mode} toggleMode={toggleMode} />

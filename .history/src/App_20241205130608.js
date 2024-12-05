@@ -40,7 +40,7 @@ function App() {
       }, 2000);
       setInterval(() => {
         document.title = "Install TextUtils Now";
-      }, 1500);
+      })
     }
     else{
       setMode('light');

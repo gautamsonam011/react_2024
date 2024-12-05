@@ -1,6 +1,6 @@
 // import logo from './logo
 import './App.css';
-import Abouts from './components/Abouts';
+// import Abouts from './components/Abouts';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, {useState} from 'react'
@@ -79,7 +79,7 @@ function App() {
       <TextForm heading="Enter the text below" showAlert={showAlert} />
       </div>
       <div className="container">
-      <Abouts mode={mode}  />
+      
       </div>
     {/* // </Router>   */}
     </>

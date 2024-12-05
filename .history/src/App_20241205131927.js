@@ -7,17 +7,16 @@ import React, {useState} from 'react'
 import Alert from './components/Alert';
 
 // Router setup 
-// npm install react-router-dom
 
-// import { 
-//   BrowserRouter as Router ,
-//   Switch,
-//   Route,
-//   // Link
-// } from 'react-router-dom';
-
+import { 
+  BrowserRouter as Router ,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
 // let name = "Sonam Gautam"
+
 // function hello() {
 //   var fullname = "Sonam";
 //   var designation = "Software Developer"
@@ -63,25 +62,16 @@ function App() {
 
   return (
     <>
-    {/* <Router> */}
       <Navbar title = "Home" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
-
-      {/* <Switch>
-        <Route path="/abouts">
-          // <Abouts/>
-        </Route> */}
-        {/* <Route path="/">
-        </Route> */}
-
-        {/* </Switch> */}
       <div className='container my-3'>
       <TextForm heading="Enter the text below" showAlert={showAlert} />
       </div>
       <div className="container">
-      <Abouts mode={mode}  />
+      <Abouts/>
       </div>
-    {/* // </Router>   */}
+      
+      
     </>
   );
 }

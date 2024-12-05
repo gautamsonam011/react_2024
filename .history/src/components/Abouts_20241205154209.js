@@ -27,7 +27,7 @@ export default function Abouts(props) {
     // }
 
     let myStyle = {
-        color: props.mode === 'dark'?'white':'black',
+        color: props.mode === 'dark'?'white':'rgb(229 229 72)',
         backgroundColor: props.mode === 'dark'?'rgb(229 229 72)':'white'
     }
 

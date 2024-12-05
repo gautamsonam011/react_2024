@@ -69,7 +69,7 @@ function App() {
 
       {/* <Switch>
         <Route path="/abouts">
-          // <Abouts/>
+          <Abouts/>
         </Route> */}
         {/* <Route path="/">
         </Route> */}
@@ -79,7 +79,7 @@ function App() {
       <TextForm heading="Enter the text below" showAlert={showAlert} />
       </div>
       <div className="container">
-      <Abouts mode={mode}  />
+      
       </div>
     {/* // </Router>   */}
     </>

@@ -62,15 +62,15 @@ export default function TextForm(props) {
                 {/* <label for="exampleInputEmail1" className="form-label">Text Box</label> */}
                 <textarea type="text" className="form-control" id="text" rows="8" value={text} onChange={handleOnChange} style = {{backgroundColor: props.mode === 'dark'?'yellow':'grey'}} ></textarea>
             </div>
-            <button type="submit" className="btn btn-info mx-2 my-1" onClick={handleUpClick}>Convert To UpperCase</button>
-            <button type="submit" className="btn btn-info mx-2 my-1" onClick={handleLoClick}>Convert To LowerCase</button>
-            <button type="submit" className="btn btn-info mx-2 my-1" onClick={handleCopy}>Copy</button>
-            <button type="submit" className="btn btn-info mx-2 my-1" onClick={handleExtraSpace}>Remove Extra Spaces</button>
+            <button type="submit" className="btn btn-info mx-2" onClick={handleUpClick}>Convert To UpperCase</button>
+            <button type="submit" className="btn btn-info mx-2" onClick={handleLoClick}>Convert To LowerCase</button>
+            <button type="submit" className="btn btn-info mx-2" onClick={handleCopy}>Copy</button>
+            <button type="submit" className="btn btn-info mx-2" onClick={handleExtraSpace}>Remove Extra Spaces</button>
         </div>
         <div className='container my3'>
             <h2 className="my-4">Your text summary</h2>
             <p>Words: {text.split(" ").filter((element)=>{return element.length!=0}).length}, Characters: {text.length}</p>
-            <p>{0.008 * text.split("").filter((element)=>{return element.length!=0}).length} Minutes read</p>
+            <p>{0.008 * text.split("").length} Minutes read</p>
             <h2>Preview</h2>
             <p>{text.length>0?text:"Enter something to preview it here"}</p>
         </div>

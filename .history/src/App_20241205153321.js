@@ -79,7 +79,7 @@ function App() {
       <TextForm heading="Enter the text below" showAlert={showAlert} />
       </div>
       <div className="container">
-      <Abouts mode={mode}  />
+      <Abouts/>
       </div>
     {/* // </Router>   */}
     </>

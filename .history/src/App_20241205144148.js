@@ -9,12 +9,12 @@ import Alert from './components/Alert';
 // Router setup 
 // npm install react-router-dom
 
-// import { 
-//   BrowserRouter as Router ,
-//   Switch,
-//   Route,
-//   // Link
-// } from 'react-router-dom';
+import { 
+  BrowserRouter as Router ,
+  Switch,
+  Route,
+  // Link
+} from 'react-router-dom';
 
 
 // let name = "Sonam Gautam"
@@ -63,25 +63,25 @@ function App() {
 
   return (
     <>
-    {/* <Router> */}
+    <Router>
       <Navbar title = "Home" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
 
-      {/* <Switch>
+      <Switch>
         <Route path="/abouts">
-          // <Abouts/>
-        </Route> */}
+          <Abouts/>
+        </Route>
         {/* <Route path="/">
         </Route> */}
 
-        {/* </Switch> */}
+        </Switch>
       <div className='container my-3'>
       <TextForm heading="Enter the text below" showAlert={showAlert} />
       </div>
       <div className="container">
-      <Abouts mode={mode}  />
+      
       </div>
-    {/* // </Router>   */}
+    </Router>  
     </>
   );
 }

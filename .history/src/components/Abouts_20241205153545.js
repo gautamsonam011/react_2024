@@ -1,35 +1,35 @@
 import React, {useState} from 'react'
 
-export default function Abouts(props) {
-    // const [myStyle, setMyStyle] = useState({
-    //     color: 'red',
-    //     backgroundColor: 'black',
-    // })
+export default function Abouts() {
+    const [myStyle, setMyStyle] = useState({
+        color: 'red',
+        backgroundColor: 'black',
+    })
     const [btntext, setBtnText] = useState("Ligth Mode");
 
-    // const toggleStyle = () => {
-    //    if (myStyle.color === 'red'){
-    //     setMyStyle({
-    //         color: 'black',
-    //         backgroundColor: 'red',
-    //         border: '2px solid red'
-    //     })
-    //     setBtnText("Dark Mode")
+    const toggleStyle = () => {
+       if (myStyle.color === 'red'){
+        setMyStyle({
+            color: 'black',
+            backgroundColor: 'red',
+            border: '2px solid red'
+        })
+        setBtnText("Dark Mode")
         
-    //    }
-    //    else {
-    //     setMyStyle({
-    //         color: 'red',
-    //         backgroundColor: 'black',
-    //     })
-    //     setBtnText("Ligth Mode")
-    //    }
-    // }
-
-    let myStyle = {
-        color: props.mode === 'dark'?'white':'black',
-        backgroundColor: props.mode === 'dark'?'rgb(229 229 72)':'white'
+       }
+       else {
+        setMyStyle({
+            color: 'red',
+            backgroundColor: 'black',
+        })
+        setBtnText("Ligth Mode")
+       }
     }
+
+    // let myStyle = {
+    //     color: props.mode === 'dark'?'white':'black';
+    //     backgroundColor: props.mode === 'dark'?'black':'white';
+    // }
 
     return (
         <>
@@ -75,7 +75,7 @@ export default function Abouts(props) {
             </div>
         </div>
         <div class="container my-4">
-        <button type="button" class="btn btn-info" >{btntext}</button>
+        <button type="button" class="btn btn-info" onClick={toggleStyle}>{btntext}</button>
         </div>
         
         </>

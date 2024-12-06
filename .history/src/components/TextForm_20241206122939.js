@@ -39,8 +39,8 @@ export default function TextForm(props) {
     const handleCopy = () => {
         console.log("This is a copy");
         var text = document.getElementById("text");
-        // text.select();
-        // text.setSelectionRange(0, 9999);
+        text.select();
+        text.setSelectionRange(0, 9999);
         navigator.clipboard.writeText(text.value);
     }
 

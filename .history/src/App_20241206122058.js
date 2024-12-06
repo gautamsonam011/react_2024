@@ -39,7 +39,7 @@ function App() {
     }, 1500);
   }
 
-  const removeBodyClasses = () => {
+  const removeBodyClasses(){
     document.body.classList.remove('bg-light');
     document.body.classList.remove('bg-dark');
     document.body.classList.remove('bg-danger');
@@ -48,8 +48,6 @@ function App() {
     
   }
   const toggleMode = (cls) =>{
-    removeBodyClasses();
-    
     document.body.classList.add('bg-'+cls)
     if (mode === 'light'){
       setMode('dark');

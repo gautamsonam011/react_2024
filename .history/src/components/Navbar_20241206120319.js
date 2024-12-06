@@ -44,22 +44,11 @@ export default function Navbar(props) {
                             <button className="btn btn-info" type="submit">Search</button>
                         </form>
                         <div className="d-flex">
-                            <div className="bg-primary rounded mx-2" style={{height:'30px', width:'30px', cursor:'pointer'}} onClick={() => {props.toggleMode('primary')}}></div>
-                        </div>
-                        <div className="d-flex">
-                            <div className="bg-danger rounded mx-2" style={{height:'30px', width:'30px', cursor:'pointer'}} onClick={() => {props.toggleMode('danger')}}></div>
-                        </div>
-                        <div className="d-flex">
-                            <div className="bg-info rounded mx-2" style={{height:'30px', width:'30px', cursor:'pointer'}} onClick={() => {props.toggleMode('info')}}></div>
-                        </div>
-                        <div className="d-flex">
-                            <div className="bg-warning rounded mx-2" style={{height:'30px', width:'30px', cursor:'pointer'}} onClick={() => {props.toggleMode('warning')}}></div>
+                            <div className="bg-primary rounded mx-2" style={{height:'30px', width:'30px'}}></div>
                         </div>
                         <div className="form-check form-switch">
-                            {/* <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} /> */}
-                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={() => {props.toggleMode(null)}} />
+                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggleMode} />
                         </div>
-                        {/* <div></div> */}
                     </div>
                 </div>
             </nav>
